@@ -1,29 +1,24 @@
-# README #
+# Deployment Scripts #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+To start deploying AssetApi servers first create a running instance that is accessible by password and username.
 
-### What is this repository for? ###
+### How to use install-on-server? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Simply run this command:
+```shell
+>$ bash install-on-server.sh -u=$MY_USERNAME -h=$MY_HOST
+```
 
-### How do I get set up? ###
+You will be prompted for a password. 
+Once proper credentials are passed it will start to setup the SC server as necessary.
+The Current OS for the AssetApi is Ubuntu 14.04x64
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### How to use push-to-server? ###
 
-### Contribution guidelines ###
+Simply run this command:
+```shell
+>$ bash push-to-server.sh -u=$MY_USERNAME -h=$MY_HOST
+```
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+You will be prompted for a password. 
+If the credentials are accepted then it will update the server to the latest master code.

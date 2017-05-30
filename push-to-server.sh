@@ -5,7 +5,7 @@
 
 COMMANDS[0]="echo '${SSH_PASSWORD}' | sudo -S rm -rf assetapi"
 COMMANDS[1]="git clone https://bitbucket.org/scooblyboo/assetapi.git"
-COMMANDS[2]="echo '${SSH_PASSWORD}' | sudo rsync -a assetapi/src/ /var/www/assetapi/src/"
+COMMANDS[2]="echo '${SSH_PASSWORD}' | sudo rsync -a assetapi/src/ /var/www/asset_api/src/"
 COMMANDS[3]="echo '${SSH_PASSWORD}' | sudo rsync -a assetapi/vagrant/ install/"
 COMMANDS[4]="echo '${SSH_PASSWORD}' | sudo rsync -a assetapi/sql/ sql/"
 COMMANDS[5]="echo '${SSH_PASSWORD}' | sudo chown www-data:www-data -R /var/www/assetapi"

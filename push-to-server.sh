@@ -10,7 +10,6 @@ COMMANDS[3]="echo '${SSH_PASSWORD}' | sudo rsync -a assetapi/vagrant/ install/"
 COMMANDS[4]="echo '${SSH_PASSWORD}' | sudo rsync -a assetapi/sql/ sql/"
 COMMANDS[5]="echo '${SSH_PASSWORD}' | sudo chown www-data:www-data -R /var/www/assetapi"
 COMMANDS[6]="bash install/composer.sh"
-COMMANDS[7]="bash install/bower.sh"
 
 n_elements=${#COMMANDS[@]}
 

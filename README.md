@@ -1,6 +1,6 @@
-# Deployment Scripts #
+# CI-AssetAPI #
 
-To start deploying AssetApi servers first create a running instance that is accessible by password and username.
+A basic installation and update script for servers that want to have the AssetAPI or have the AssetAPI already installed. To start deploying AssetApi servers first create a running instance that is accessible by password and username.
 
 ### How to use install-on-server? ###
 

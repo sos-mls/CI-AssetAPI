@@ -12,12 +12,12 @@ read -s ASSETAPI_MYSQL_PASSWORD
 echo
 
 COMMANDS[0]="echo '${SSH_PASSWORD}' | sudo -S apt-get -y --force-yes install git"
-COMMANDS[1]="git clone https://bitbucket.org/scooblyboo/assetapi.git"
+COMMANDS[1]="git clone https://github.com/sos-mls/AssetAPI.git"
 COMMANDS[2]="sudo mkdir /var/www"
-COMMANDS[3]="sudo mkdir /var/www/assetapi"
-COMMANDS[4]="sudo mv assetapi/src /var/www/asset_api/src"
-COMMANDS[5]="mv assetapi/vagrant install"
-COMMANDS[6]="mv assetapi/sql sql"
+COMMANDS[3]="sudo mkdir /var/www/AssetAPI"
+COMMANDS[4]="sudo mv AssetAPI/src /var/www/asset_api/src"
+COMMANDS[5]="mv AssetAPI/vagrant install"
+COMMANDS[6]="mv AssetAPI/sql sql"
 
 # Configure Installtion process
 COMMANDS[7]="sed -i 's/\/home\/vagrant/\/root/g' install/install.sh"

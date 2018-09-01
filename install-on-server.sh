@@ -14,7 +14,7 @@ echo
 COMMANDS[0]="echo '${SSH_PASSWORD}' | sudo -S apt-get -y --force-yes install git"
 COMMANDS[1]="git clone https://github.com/sos-mls/AssetAPI.git"
 COMMANDS[2]="sudo mkdir /var/www"
-COMMANDS[3]="sudo mkdir /var/www/AssetAPI"
+COMMANDS[3]="sudo mkdir /var/www/asset_api"
 COMMANDS[4]="sudo mv AssetAPI/src /var/www/asset_api/src"
 COMMANDS[5]="mv AssetAPI/vagrant install"
 COMMANDS[6]="mv AssetAPI/sql sql"
@@ -25,7 +25,7 @@ COMMANDS[8]="sed -i 's/default_username/${ASSETAPI_MYSQL_USERNAME}/g' install/he
 COMMANDS[9]="sed -i 's/default_password/${ASSETAPI_MYSQL_PASSWORD}/g' install/helpers/config.txt"
 
 # Run Installation
-COMMANDS[10]="bash install/install.sh"
+COMMANDS[10]="sudo bash install/install.sh"
 COMMANDS[11]="sudo mkdir /var/www/asset_api/src/assets"
 COMMANDS[12]="sudo chown www-data:www-data -R /var/www/asset_api/src"
 
